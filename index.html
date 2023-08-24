@@ -118,8 +118,9 @@ function myFunction() {
 <body id='about_page'>
 
 
+
 <div class="container">
-  <div class="black-box"><img src="/assets/images/IMG_0034.jpg" style='width:100%'></div>
+  <div class="black-box"><img src="{{ "assets/images/IMG_0034.jpg" | relative_url }}"  style="width:100%"></div>
   <div class="gray-box"><div class="topnav" id="myTopnav">
   <a href="#about" class="active">About</a>
   <a href="projects.html">Projects</a>
@@ -139,7 +140,7 @@ function myFunction() {
   <div class="row">
     <div class="column" style="background-color:#2e2d33;">
       <figure>
-      <img src="/assets/images/IMG_2217.jpg" alt="Photo of Leif Clark" width="100%" id='profile_pic'>
+      <img src="assets/images/IMG_2217.jpg" alt="Photo of Leif Clark" width="100%" id='profile_pic'>
       <figcaption><i>Photo by <a id='clintconnors' href="https://www.clintconnors.com/">the inimitable Clint Connors</a></i></figcaption>
       </figure>
     </div>
