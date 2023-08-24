@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content=" {{ page.tags }}">
+    <meta name="description" content="{{ page.description }}">
+  <title>About</title>    <!-- imports title metadata from content and/or post page   -->
+
+<!--The following four css links contain a redundancy intended to deal with different directory
+structures between a locally hosted live copy and a static copy of the site -->
+
+    <link rel="stylesheet" href= "./assets/css/contentrules.css">
+    <link rel="stylesheet" href= "./assets/css/main.css">
+
+
+    <!-- favicon links   -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+
+<!--  responsive topnav from w3schools  -->
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script>
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
+    }
+  });
+});
+</script>
+
+<!--  responsive topnav script from w3schools  -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<!--  end of responsive topnav script from w3schools  -->
+
+
+<!-- end of responsive topnav from w3schools  -->
+
+
+
+
+<style>
+.container {
+  position: relative;
+}
+
+.black-box {
+  position: relative;
+
+}
+
+.gray-box {
+  position: absolute;
+  background: transparent;
+  height: 60px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+.green-box {
+  position: absolute;
+  background: transparent;
+
+  margin-left:auto;
+  margin-right:auto;
+  bottom: 15px;
+  height: 100px;
+}
+
+</style>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
+</head>
+
+<body id='about_page'>
+
+
+<div class="container">
+  <div class="black-box"><img src="/assets/images/IMG_0034.jpg" style='width:100%'></div>
+  <div class="gray-box"><div class="topnav" id="myTopnav">
+  <a href="#about" class="active">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="resume.html">Resume</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div></div>
+  <div class="green-box"><h1></h1></div>
+</div>
+
+
+
+<main>
+
+  <div class="row">
+    <div class="column" style="background-color:#2e2d33;">
+      <figure>
+      <img src="/assets/images/IMG_2217.jpg" alt="Photo of Leif Clark" width="100%" id='profile_pic'>
+      <figcaption><i>Photo by <a id='clintconnors' href="https://www.clintconnors.com/">the inimitable Clint Connors</a></i></figcaption>
+      </figure>
+    </div>
+    <div class="column" style="background-color:#2e2d33;">
+      <h2 id='about'>ABOUT</h2>
+      <p class= "prose">Howdy there! </p>
+      <p class="prose">My name is Leif Clark and you’ve found my website! I’m originally from SouthWest Montana,
+        but I spent the last four years living in Boston and attending MIT. I graduated in 2023 with a B.S. in Electrical
+        Engineering and a minor in political science. I built this website as a way to share information about <a style="text-decoration: underline;color:white;" href="projects.html">projects
+        I’ve worked on</a> and some of <a style="text-decoration: underline;color:white;" href="gallery.html">my favorite photos.</a></p>
+    </div>
+  </div>
+
+
+
+
+<footer>
+  <p>&copy; Copyright 2023. Issue with the website? <a href="resume.html">Contact the webmaster</a></p>
+</footer>
+
+</main>
+
+  </body>
+</html>

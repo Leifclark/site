@@ -1,0 +1,130 @@
+
+
+
+
+.gallery_general_display img, figure {
+margin-left: auto;
+margin-right:auto;
+display:block;
+width:100%;
+margin: 0;
+}
+
+
+.gallery_mobile_display img {
+margin-left: auto;
+margin-right:auto;
+display:none;
+width:100%
+}
+
+
+.gallery_general_display_portrait img {
+  margin-left: auto;
+  margin-right:auto;
+display:block;
+width:60%
+}
+
+
+.gallery_mobile_display_portrait img {
+margin-left: auto;
+margin-right:auto;
+display:none;
+width:100%
+}
+
+
+.gallery_mobile_display figcaption{
+  display:block;
+}
+
+.gallery_mobile_display_portrait figcaption{
+  display:block;
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+  .gallery_general_display img {
+  margin-left: auto;
+  margin-right:auto;
+  display:block;
+  width:70%
+  }
+
+
+  .gallery_mobile_display img {
+  margin-left: auto;
+  margin-right:auto;
+  display:none;
+  width:100%
+  }
+
+
+  .gallery_general_display_portrait img {
+    margin-left: auto;
+    margin-right:auto;
+  display:block;
+  width:30%
+  }
+
+
+  .gallery_mobile_display_portrait img {
+  margin-left: auto;
+  margin-right:auto;
+  display:none;
+  width:100%
+  }
+
+
+
+  .gallery_mobile_display figcaption{
+    display:block;
+  }
+
+  .gallery_mobile_display_portrait figcaption{
+    display:block;
+  }
+
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+    .gallery_general_display img {
+    margin-left: auto;
+    margin-right:auto;
+    width:100%;
+    display:none;
+    }
+
+
+
+    .gallery_mobile_display img {
+    margin-left: auto;
+    margin-right:auto;
+    display:block;
+    width:100%
+    }
+
+
+    .gallery_general_display_portrait img {
+      margin-left: auto;
+      margin-right:auto;
+    display:none;
+    width:100%
+    }
+
+
+    .gallery_mobile_display_portrait img {
+    margin-left: auto;
+    margin-right:auto;
+    display:block;
+    width:100%
+    }
+
+
+
+  }

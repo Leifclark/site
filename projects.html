@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content=" sdf ">
+    <meta name="description" content="sdf">
+  <title>Projects</title>    <!-- imports title metadata from content and/or post page   -->
+
+<!--The following four css links contain a redundancy intended to deal with different directory
+structures between a locally hosted live copy and a static copy of the site -->
+    <!--
+    <link rel="stylesheet" href="/site/assets/css/contentrules.css">
+    <link rel="stylesheet" href="/site/assets/css/main.css">
+    <link rel="stylesheet" href= "./assets/css/contentrules.css">
+    <link rel="stylesheet" href= "./assets/css/main.css">
+
+    <link rel="stylesheet" href= "assets/css/contentrules.css">
+    <link rel="stylesheet" href= "assets/css/main.css">
+
+
+    <link rel="stylesheet" href="/site/assets/css/contentrules.css">
+    <link rel="stylesheet" href="/site/assets/css/main.css">
+    <link rel="stylesheet" href= "/assets/css/contentrules.css">
+    <link rel="stylesheet" href= "/assets/css/main.css">
+  -->
+
+  <link rel="stylesheet" href="/site/assets/css/contentrules.css">
+  <link rel="stylesheet" href="/site/assets/css/main.css">
+
+
+
+ <!-- favicon links   -->
+ <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+ <link rel="manifest" href="/site.webmanifest">
+
+
+
+
+
+
+<!--  responsive topnav from w3schools  -->
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+
+
+<div class="topnav" id="myTopnav">
+  <a href="/site/index.html#about" class="active">About</a>
+  <a href="/site/projects.html">Projects</a>
+  <a href="/site/gallery.html">Gallery</a>
+  <a href="/site/resume.html">Resume</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<!-- end of responsive topnav from w3schools  -->
+
+<!-- These two scripts enable responsive colors on the navbar - not from w3 -->
+  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+  <script>
+  $(function(){
+    $('a').each(function() {
+      if ($(this).prop('href') == window.location.href) {
+        $(this).addClass('current');
+      }
+    });
+  });
+  </script>
+
+<!--  responsive topnav script from w3schools  -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<!--  end of responsive topnav script from w3schools  -->
+
+
+
+  <body>
+
+
+
+      <main> <!-- main controls content (white) under navbar  -->
+        <link rel="stylesheet" href="/site/assets/css/projects.css">
+<link rel="stylesheet" href= "./assets/css/projects.css">
+
+
+
+<h1 style="text-align:center">PROJECTS</h1>
+<br>
+
+
+<div class="projectwrapper">
+
+<br>
+
+
+<div class="project_block">
+<h2><a href="posts/tubetester.html">Analog, Solid State evaluation of Vacuum Tubes</a></h2>
+<p>Lorem ipsum dolor sit amet,  <a href="posts/tubetester.html">Learn more.</a></p>  </div>
+<br>
+
+
+<div class="project_block">
+<h2><a href="posts/metalcan.html">'Passive' Radiolocation</a></h2>
+<p>Lorem ipsum dolor sit amet,  <a href="posts/metalcan.html">Learn more.</a></p>
+
+  </div>
+<br>
+
+
+
+
+<div class="project_block">
+<h2><a href="posts/digdug.html">Re-creating Dig-Dug on an FPGA</a></h2>
+<p>This project involved recreating the classic Namco arcade game <i>Dig-Dug</i> on an FPGA as a course
+  project at MIT. I worked with a partner to write, simulate, and troubleshoot SystemVerilog in Xilinx
+  Vivado Design Suite. <a href="posts/digdug.html">Learn more.</a></p></div>
+
+</div>
+
+      </main>
+
+
+      <footer>
+        <p>&copy; Copyright 2023. Issue with the website? <a href="resume.html">Contact the webmaster</a></p>
+      </footer>
+
+
+  </body>
+</html>

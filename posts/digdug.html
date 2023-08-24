@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="  ">
+    <meta name="description" content="">
+  <title>FPGA Dig-Dug</title>    <!-- imports title metadata from content and/or post page   -->
+
+<!--The following four css links contain a redundancy intended to deal with different directory
+structures between a locally hosted live copy and a static copy of the site -->
+    <!--
+    <link rel="stylesheet" href="/site/assets/css/contentrules.css">
+    <link rel="stylesheet" href="/site/assets/css/main.css">
+    <link rel="stylesheet" href= "./assets/css/contentrules.css">
+    <link rel="stylesheet" href= "./assets/css/main.css">
+
+    <link rel="stylesheet" href= "assets/css/contentrules.css">
+    <link rel="stylesheet" href= "assets/css/main.css">
+
+
+    <link rel="stylesheet" href="/site/assets/css/contentrules.css">
+    <link rel="stylesheet" href="/site/assets/css/main.css">
+    <link rel="stylesheet" href= "/assets/css/contentrules.css">
+    <link rel="stylesheet" href= "/assets/css/main.css">
+  -->
+
+  <link rel="stylesheet" href="/site/assets/css/contentrules.css">
+  <link rel="stylesheet" href="/site/assets/css/main.css">
+
+
+
+ <!-- favicon links   -->
+ <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+ <link rel="manifest" href="/site.webmanifest">
+
+
+
+
+
+
+<!--  responsive topnav from w3schools  -->
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+
+
+<div class="topnav" id="myTopnav">
+  <a href="/site/index.html#about" class="active">About</a>
+  <a href="/site/projects.html">Projects</a>
+  <a href="/site/gallery.html">Gallery</a>
+  <a href="/site/resume.html">Resume</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<!-- end of responsive topnav from w3schools  -->
+
+<!-- These two scripts enable responsive colors on the navbar - not from w3 -->
+  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+  <script>
+  $(function(){
+    $('a').each(function() {
+      if ($(this).prop('href') == window.location.href) {
+        $(this).addClass('current');
+      }
+    });
+  });
+  </script>
+
+<!--  responsive topnav script from w3schools  -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<!--  end of responsive topnav script from w3schools  -->
+
+
+
+  <body>
+
+
+
+      <main> <!-- main controls content (white) under navbar  -->
+        <link rel="stylesheet" href="/site/assets/css/projects.css">
+<link rel="stylesheet" href= "/assets/css/projects.css">
+
+
+<h1 style="text-align:center">Re-creating Dig-Dug on an FPGA</h1>
+
+<div class="projectwrapper">
+
+
+<p>Recreating <a href="https://en.wikipedia.org/wiki/Dig_Dug">Dig Dug</a> is obviously not a particularly serious application for an FPGA.
+  However, the complexity of the finite state machines (FSMs), input/output controls,
+  and graphics made it made an excellent educational project. </p>
+
+<figure style="text-align:center;">
+<img id="digdug2" src="/assets/images/projects/digdug2.JPG" alt="dig dug running on an an FPGA in a lab setting">
+  <figcaption>Dig Dug running on an FPGA</figcaption>
+</figure>
+
+
+<p>The FPGA board in the lower left corner of the above photo is running the game logic and graphics for the game displayed
+on the lefthand monitor. Gameplay controls consist of the four-way buttons on the board. A closer photo of gameplay in progress is shown below</p>
+
+
+<figure style="text-align:center;">
+<img id="digdug3" src="/site/assets/images/projects/digdug3.JPG" alt="dig dug running on an an FPGA in a lab setting">
+  <figcaption>FPGA Dig Dug gameplay</figcaption>
+</figure>
+
+<p>For detailed information about the projects functionality, block diagrams, and FSM diagrams, the final project report has been linked below.</p>
+
+
+
+<p><a href="/assets/files/FPGA Dig Dug Report.pdf" download>Download the report here</a></p>
+
+
+  </div>
+
+      </main>
+
+
+      <footer>
+        <p>&copy; Copyright 2023. Issue with the website? <a href="resume.html">Contact the webmaster</a></p>
+      </footer>
+
+
+  </body>
+</html>
