@@ -89,11 +89,50 @@ function myFunction() {
 
       <main> <!-- main controls content (white) under navbar  -->
         <link rel="stylesheet" href="/assets/css/projects.css">
-<link rel="stylesheet" href= "./assets/css/projects.css">
+
 
 <h1 style="text-align:center">'Passive' Radiolocation</h1>
 
 <div class="projectwrapper">
+
+<p>One of my favorite projects in my undergraduate education was for a class on electromagnetic fields and energy.
+The class's project requirement was open ended and my two partners and I settled on a radiolocation project loosely inspired
+by <a target="_blank" href="https://youtube.com/watch?v=Jq-d4Kl8Xh4"> Richard Godfrey's method of searching for Malaysia Airlines Flight 370</a>. </p>
+
+<p>The fundamental goal of our project was to design and fabricate a system that could locate a conductive object on a plane based
+  off of the reflected and obstructed transmissions from sets of paired antennas. This approach is distinct from radar because of
+its consideration of signals obstructed between (relatively) distant points and lack of consideration of the timing of reflected signals. </p>
+
+<p>Our demonstration setup, shown below, consisted of three nanoVNAs, each measuring ratios of reflected and transmitted power between
+a pair of quarter wave dipole antennas operating in the 2-3Ghz range. The test object was an aluminum can placed at various points
+on the plane.</p>
+
+
+  <figure style="text-align:center;">
+  <img id="digdug2" src="/assets/images/projects/metalcan1.JPG" alt="dig dug running on an an FPGA in a lab setting">
+    <figcaption>The passive radiolocation test setup, without the aluminum can.</figcaption>
+  </figure>
+
+<p>We gathered datapoints for the reflected and received transmit power ratios for each pair of antennas with the can at a variety
+  of points in the plane, and I wrote a simple processing algorithm to predict the three most likely locations of the can based off
+  of reflected and received transmit power ratios from the nanoVNAs. The system was typically able to locate the can with an accuracy
+  of approximately 5 cm in one of the top three predictions.</p>
+
+  <p>The accuracy of the system was limited by a few factors. First, the antennas were fabricated by hand were less precisely tuned
+    to each other than a machined antenna could have been. Similarly, the 50 Ohm copper microstrips were trimmed by hand and likely introduced
+    a small impedance mismatch despite our best efforts to trim them to size. Second, the system was highly sensitive to environmental
+    factors. The test data gathered for the prediction algorithm was sensitive to the geometry of the lab environment and highly influenced
+    by ambient movement of individuals in the lab. Third, the prediction algorithm was simplistic in nature and did not incorporate phase data
+    or weight the importance of known datapoints in making a prediction. Despite the system's limitations, the concept was proven and
+    offered significant inspiration for future improvements or applications.</p>
+
+    <p>If you're interested in the more technical details, the project report can be downloaded below.</p>
+
+  <p></p>
+
+  <p><a href="/assets/files/Passive Radiolocation Report.pdf" download>Download the report here</a></p>
+
+  <p>I also have a <a href="/assets/files/Passive Radiolocation Report.pdf" download>short powerpoint presentation</a> that I made later to explain the project to a small group.</p>
 
 
   </div>
@@ -102,7 +141,7 @@ function myFunction() {
 
 
       <footer>
-        <p>&copy; Copyright 2023. Issue with the website? <a href="resume.html">Contact the webmaster</a></p>
+        <p>&copy; Copyright 2023. Issue with the website? <a href="/resume.html">Contact the webmaster</a></p>
       </footer>
 
 

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="  ">
+    <meta name="description" content="">
+  <title>Canon T1i Shutter Repair</title>    <!-- imports title metadata from content and/or post page   -->
+
+<!--The following four css links contain a redundancy intended to deal with different directory
+structures between a locally hosted live copy and a static copy of the site -->
+    <!--
+    <link rel="stylesheet" href="/assets/css/contentrules.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href= "./assets/css/contentrules.css">
+    <link rel="stylesheet" href= "./assets/css/main.css">
+
+    <link rel="stylesheet" href= "assets/css/contentrules.css">
+    <link rel="stylesheet" href= "assets/css/main.css">
+
+
+    <link rel="stylesheet" href="/assets/css/contentrules.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href= "/assets/css/contentrules.css">
+    <link rel="stylesheet" href= "/assets/css/main.css">
+  -->
+
+  <link rel="stylesheet" href="/assets/css/contentrules.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+
+
+ <!-- favicon links -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+
+<!--  responsive topnav from w3schools  -->
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+
+
+<div class="topnav" id="myTopnav">
+  <a href="/index.html#about" class="active">About</a>
+  <a href="/projects.html">Projects</a>
+  <a href="/Gallery.html">Gallery</a>
+  <a href="/resume.html">Resume</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<!-- end of responsive topnav from w3schools  -->
+
+<!-- These two scripts enable responsive colors on the navbar - not from w3 -->
+<!--  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script> -->
+  <script>
+  $(function(){
+    $('a').each(function() {
+      if ($(this).prop('href') == window.location.href) {
+        $(this).addClass('current');
+      }
+    });
+  });
+  </script>
+
+<!--  responsive topnav script from w3schools  -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<!--  end of responsive topnav script from w3schools  -->
+
+
+
+  <body>
+
+
+
+      <main> <!-- main controls content (white) under navbar  -->
+        <link rel="stylesheet" href="/assets/css/projects.css">
+
+
+<h1 style="text-align:center">Replacing the shutter unit in a Canon T1i</h1>
+
+
+<div class="projectwrapper">
+
+<p>
+In the fall of 2019 I purchased a used Canon T1i (500D). It was 90 USD, 10 years old, and had a
+ small crack in the glass covering the LCD. Flawed as it was, its age and price made it a perfect
+ beater DSLR that I could (rather recklessly) wrap in a hat and shove into a bag. Roughly 3.5
+ years and 4168 shutter actuations later, a shutter blade got stuck while I was on a roadtrip.
+</p>
+
+
+
+
+  <figure style="text-align:center;">
+  <img id="digdug2" src="/assets/images/projects/shutter0.JPG" alt="partially obstructed photo of moon over field">
+    <figcaption>The exposure where the errant shutter blade got stuck.</figcaption>
+  </figure>
+
+
+<p>
+Although the camera had always been intended to be a borderline disposable device, I had
+nonetheless spent a great deal of time with it and become rather fond of having it available
+as an alternate option for the times and places where I didn’t want to carry better equipment.
+So I decided to fix it.
+  </p>
+
+
+<p>
+I started by trying the menagerie of shutter actuation and power cycling tricks that the
+internet offered, but to no avail. I tried carefully applying a Teflon based lubricant to
+the shutter blades and only succeeded in creating a small spatter of oil on the surface
+of the sensor. (I do not endorse this method.) I found a service that offered to replace
+the shutter unit for 120 USD plus shipping, but that seemed like a losing proposition
+on a camera that was now worth considerably less than 90 dollars.
+  </p>
+
+
+  <p>
+  I found a newly manufactured compatible shutter assembly on Ebay for 27 USD. I wasn’t very
+  confident about being able to disassemble the camera, swap the part, and reassemble the
+  camera without introducing any other problems, but
+  <a target="_blank" href='https://www.youtube.com/watch?v=Bg40iNq2PJU'>this video was enormously helpful </a>
+  in the early stages of the disassembly. I would not recommend disassembling a DSLR without
+  similar documentation. Some of the order of operations were not intuitive or obvious from observation.
+    </p>
+
+
+
+    <p>
+    In order to replace the shutter unit, I had to conduct a near-total disassembly of
+    the camera. The following photos document the stages of the process.
+      </p>
+
+
+
+
+  <figure style="text-align:center;">
+  <img id="digdug3" src="/assets/images/projects/shutter1.JPG" alt="internal components of a DSLR camera">
+    <figcaption>The innards of the camera after removal of the plastic clamshell,
+      LCD, main PCB, and SD reader PCB.</figcaption>
+  </figure>
+<br>
+
+
+  <figure style="text-align:center;">
+  <img id="digdug3" src="/assets/images/projects/shutter2.JPG" alt="internal components of a DSLR camera">
+    <figcaption>The core of the camera. Here the back of the sensor is exposed.</figcaption>
+  </figure>
+<br>
+
+
+  <figure style="text-align:center;">
+  <img id="digdug3" src="/assets/images/projects/shutter3.JPG" alt="internal components of a DSLR camera">
+    <figcaption>Holding the sensor between my fingers, face down.</figcaption>
+  </figure>
+<br>
+
+  <figure style="text-align:center;">
+  <img id="digdug3" src="/assets/images/projects/shutter4.JPG" alt="internal components of a DSLR camera">
+    <figcaption>The shutter curtains visible after removing the sensor.</figcaption>
+  </figure>
+<br>
+
+
+  <figure style="text-align:center;">
+  <img id="digdug3" src="/assets/images/projects/shutter5.JPG" alt="internal components of a DSLR camera">
+    <figcaption>The remains of the 'camera' after removing the viewfinder and flash assemblies.</figcaption>
+  </figure>
+<br>
+
+
+  <figure style="text-align:center;">
+  <img id="digdug3" src="/assets/images/projects/shutter6.JPG" alt="internal components of a DSLR camera">
+    <figcaption>The shutter unit to be replaced, including the power leads which had to be soldered onto the new shutter unit.</figcaption>
+  </figure>
+
+
+<p>
+The entire process included several disassembles and assemblies to troubleshoot problems in
+addition to a trip to the hardware store to buy a T5 screwdriver tip. I also removed a few
+stray grains of rice which seem to have been bouncing around inside the body since before
+I bought the camera and took the opportunity to thoroughly clean the sensor After an elapsed time of thirteen hours, the camera was once again
+in working order. Between the wear on the body, the grains of rice, and the shutter unit
+assembly, I know the camera has had a rough 14 years. With the cheap availability of broken
+units for parts I suspect that the camera has many years of life left in it, at least until
+It becomes the camera of Theseus.
+  </p>
+
+
+
+
+  </div>
+
+      </main>
+
+
+      <footer>
+        <p>&copy; Copyright 2023. Issue with the website? <a href="/resume.html">Contact the webmaster</a></p>
+      </footer>
+
+
+  </body>
+</html>

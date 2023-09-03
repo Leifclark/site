@@ -89,20 +89,67 @@ function myFunction() {
 
       <main> <!-- main controls content (white) under navbar  -->
         <link rel="stylesheet" href="/assets/css/projects.css">
-<link rel="stylesheet" href= "./assets/css/projects.css">
-<h1 style="text-align:center">Analog, Solid State evaluation of Vacuum Tubes</h1>
+
 
 
 <div class="projectwrapper">
 
+  <p>
+  This project was completed for a class in analog electronics. The broad goal of the project was
+  to design and implement an analog system.  In the spirit of analog electronics, my project
+  partner and I attempted to build an analog solid-state mutual conductance measurement system
+  for vacuum tubes.
+  </p>
+  <p>
+  Fundamentally, the project involved powering the tube, generating an input signal, and measuring
+  the ratio of the output signal to the input signal. My main contribution to the project was
+  the analog measurement of the ratio of the output signal to the input signal. Both signals
+  were AC and had to be run through DC-offset removal and peak detection circuits to create
+  two DC values that could be divided.
+  </p>
+  <p>
+  Dividing DC values using analog solid-state technology is not a trivial task. In the spirit
+  of the analog electronics class, we shunned purpose-built ICs and built our own division
+  circuit. The common “solution” to this problem is an op-amp division circuit that leverages
+  log properties to divide two values. The circuit is seemingly a very elegant solution.
+  </p>
+  <p>
+  Practically, the circuit is terribly sensitive to component variation because of its reliance
+  on the exponential characteristic of PN junctions. What ensued was a drawn-out series of
+  attempts to tune the circuit, then to create more reliable approximations of the exponential
+  and logarithmic functions. The most interesting and disappointing attempt at the division
+  circuit was the implementation of a Taylor series approximation using a small pile of LM741 op amps.
+  </p>
+  <p>
+  The following report is comprehensive and includes all of the schematics and graphs pertinent
+   to both the division circuit and the rest of the project.
+  </p>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <p><a href="/assets/files/6.101 Final Project Report.pdf" download>Download the report here</a></p>
   </div>
 
       </main>
 
 
       <footer>
-        <p>&copy; Copyright 2023. Issue with the website? <a href="resume.html">Contact the webmaster</a></p>
+        <p>&copy; Copyright 2023. Issue with the website? <a href="/resume.html">Contact the webmaster</a></p>
       </footer>
 
 
